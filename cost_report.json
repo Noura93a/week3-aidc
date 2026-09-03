@@ -1,0 +1,74 @@
+{
+  "gpu_hourly_usd": 0.35,
+  "target_p95_s": 3.0,
+  "levels": [
+    {
+      "concurrency": 1,
+      "tokens_per_s": 38.2,
+      "latency_p95_s": 0.9,
+      "errors": 0,
+      "cost_per_million_tokens_usd": 2.5451
+    },
+    {
+      "concurrency": 2,
+      "tokens_per_s": 71.5,
+      "latency_p95_s": 1.1,
+      "errors": 0,
+      "cost_per_million_tokens_usd": 1.3598
+    },
+    {
+      "concurrency": 4,
+      "tokens_per_s": 128.4,
+      "latency_p95_s": 1.4,
+      "errors": 0,
+      "cost_per_million_tokens_usd": 0.7572
+    },
+    {
+      "concurrency": 8,
+      "tokens_per_s": 210.7,
+      "latency_p95_s": 2.3,
+      "errors": 0,
+      "cost_per_million_tokens_usd": 0.4614
+    },
+    {
+      "concurrency": 16,
+      "tokens_per_s": 224.9,
+      "latency_p95_s": 5.8,
+      "errors": 0,
+      "cost_per_million_tokens_usd": 0.4323
+    }
+  ],
+  "knee": {
+    "concurrency": 8,
+    "tokens_per_s": 210.7,
+    "latency_p95_s": 2.3,
+    "errors": 0,
+    "cost_per_million_tokens_usd": 0.4614
+  },
+  "scale_out_plan": [
+    {
+      "required_tokens_per_s": 210.7,
+      "replicas_needed": 1,
+      "total_hourly_cost_usd": 0.35,
+      "effective_p95_s": 2.3
+    },
+    {
+      "required_tokens_per_s": 316.04999999999995,
+      "replicas_needed": 2,
+      "total_hourly_cost_usd": 0.7,
+      "effective_p95_s": 2.3
+    },
+    {
+      "required_tokens_per_s": 421.4,
+      "replicas_needed": 2,
+      "total_hourly_cost_usd": 0.7,
+      "effective_p95_s": 2.3
+    },
+    {
+      "required_tokens_per_s": 632.0999999999999,
+      "replicas_needed": 3,
+      "total_hourly_cost_usd": 1.05,
+      "effective_p95_s": 2.3
+    }
+  ]
+}
